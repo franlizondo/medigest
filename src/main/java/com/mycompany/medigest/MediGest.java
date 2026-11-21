@@ -4,13 +4,16 @@
 
 package com.mycompany.medigest;
 
-/**
- *
- * @author pc
- */
+import com.mycompany.medigest.interfaz.LoginFrame;
+
 public class MediGest {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        java.awt.EventQueue.invokeLater(() -> {
+            LoginFrame login = new LoginFrame();
+            login.setVisible(true);
+        });
+        
     }
 }
